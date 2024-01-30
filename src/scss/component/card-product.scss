@@ -1,0 +1,257 @@
+@import '../variables.scss';
+
+.card-product,
+.card-product__discr,
+.card-product__discr_availability,
+.card-product__name {
+    display: flex;
+}
+
+.card-product,
+.card-product__discr,
+.card-product__name {
+    flex-direction: column;
+}
+
+.card-product__discr {
+    align-items: flex-start;
+}
+
+.card-product,
+.card-product__name {
+    align-items: center;
+}
+
+.card-product__name_vendor,
+.card-product__name_title  {
+    text-align: center;
+}
+
+.card-product {
+    justify-content: space-between;
+}
+
+.card-product {
+    padding-top: 20px;
+}
+
+.card-product {
+    padding-bottom: 40px;
+}
+
+.card-product__name_vendor,
+.card-product__discr_availability {
+    margin-bottom: 4px;
+}
+
+.card-product__name_img {
+    margin-bottom: 20px;
+}
+
+.card-product__name_vendor,
+.card-product__name_title {
+    font-size: 16px;
+    line-height: normal;
+}
+
+.card-product__name_title {
+    font-weight: 400;
+}
+
+.card-product__name,
+.card-product__discr {
+    width: 80%;
+}
+
+.card-product {
+    width: 305px;
+    height: 450px;
+}
+
+.card-product__name_img {
+    height: 150px;
+}
+
+/* --Стилизация бордюра у карточки */
+.card-product {
+    border-right: 0.5px solid $colorBackgroundSearchHover;
+    border-bottom: 0.5px solid $colorBackgroundSearchHover;
+}
+
+//-- Для каждого третьего элемента
+.card-product:nth-child(3n) {
+    border-right: 0px;
+}
+
+//-- Для последних трех элементов
+.card-product:nth-last-child(-n+3) {
+    border-bottom: 0px;
+}
+
+.card-product__name_vendor {
+    color: $colorTextPriceCard;;
+}
+
+.card-product__name_title {
+    color: $colorTextNameCard;
+}
+
+
+
+
+
+
+//
+//
+//
+//-- Далее пока в состоянии разработки - не оптимизированно
+
+.availability__number {
+    padding-left: 20px;
+    margin-right: 10px;
+    font-size: 12px;
+    color: $colorBackgroundIconBasket;
+    background-image: url(../../img/check.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.availability__time {
+    padding-left: 20px;
+    font-size: 12px;
+    color: $colorBackgroundIconBasket;
+    background-image: url(../../img/local_shipping.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+
+}
+
+.card-product__discr_price {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;  
+    margin-bottom: 20px;
+}
+
+.price {
+    font-family: $font-price;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 600; 
+    color: $colorTextPriceCard;
+    margin-right: 8px;
+}
+
+.ruble_sign_icon {
+    height: 28px;
+}
+
+.card-product__discr_basket {
+    display: flex;
+}
+
+.basket__decrement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 30px;
+    background-color: $colorBackgroundTitle;
+    border: .5px solid $colorBackgroundTitle;
+    color: $colorTextPriceCard;
+    cursor: pointer;
+}
+
+.basket__decrement:hover {
+    background-color: $colorBackgroundSearch;
+}
+
+.basket__position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 30px;
+    border: .5px solid $colorBackgroundTitle;
+    color: $colorTextPriceCard;
+}
+
+.basket__increment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 30px;
+    background-color: $colorBackgroundTitle;
+    border: .5px solid $colorBackgroundTitle;
+    color: $colorTextPriceCard;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.basket__increment:hover {
+    background-color: $colorBackgroundSearch;
+}
+
+.basket__button {
+    width: 100px;
+    height: 30px;
+    background-color: $colorBackgroundTitle;
+    color: $colorTextPriceCard;
+    cursor: pointer;
+}
+
+.basket__button:hover {
+    background-color: $colorBackgroundSearch;
+}
+
+@media only screen and (max-width: 1280px) {
+    .card-product {
+        width: 223px;
+    }
+
+    .basket__increment {
+        margin-right: 10px;
+    }
+
+    .basket__button {
+        width: 90px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .card-product {
+        width: 293px;
+    }
+    
+    /* стилизация при расположении по две карточки */
+    /* Стилизация бордюра у карточки */
+
+    /* Возвращаю бордюры карточкам, которые изначально отсутствовали */
+    //-- Для каждого третьего элемента
+    .card-product:nth-child(3n) {
+        border-right: 0.5px solid $colorBackgroundSearchHover;
+    }
+
+    //-- Для последних трех элементов
+    .card-product:nth-last-child(-n+3) {
+        border-bottom: 0.5px solid $colorBackgroundSearchHover;
+    }
+
+    //-- Для каждого второго элемента
+    .card-product:nth-child(2n),
+    .card-product:last-of-type {
+        border-right: 0px;
+    }
+
+    //-- Для последних двух элементов
+    .card-product:nth-last-child(-n+2) {
+        border-bottom: 0px;
+    }  
+}
+
+@media only screen and (max-width: 800px) {
+    .card-product {
+        width: 206px;
+    }
+}

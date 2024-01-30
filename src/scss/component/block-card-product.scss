@@ -1,0 +1,8 @@
+@import '../variables.scss';
+
+//-- Стилизация блока с карточками товаров на странице выдачи
+.card-product-block {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
