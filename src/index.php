@@ -12,7 +12,7 @@ include "modules/head.php";
     <?php include "modules/header.php"; ?>
     <!--Основная секция страницы-->
     <main>
-        <h1 class="visually-hidden h1-visually h1__visually" style="visibility: hidden;">Комплектующие для средств автоматизации</h1>
+        <h1 class="visually-hidden h1-visually h1__visually" style="visibility: hidden;">Комплектующие для средств автоматизации у нас на сайте</h1>
         <div class="container"> 
             
         </div>
