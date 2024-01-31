@@ -9,8 +9,8 @@ const srcFolder = `./src`;
 //-- Массив с данными о путях
 export const path = {
     build: {   // путь куда следует переносить:
-        php: `${buildFolder}/`,              // файлы php
-        modules: `${buildFolder}/modules/`,  // классы и структуры, обработчики
+        page: `${buildFolder}/`,              // файлы php
+        php: `${buildFolder}/php/`,  // классы и структуры, обработчики
         css: `${buildFolder}/css/`,          // файл стилей style.css
         js: `${buildFolder}/js/`,            // файлы js
         images: `${buildFolder}/img/`,       // файлы img
@@ -19,8 +19,8 @@ export const path = {
         
     },
     src: {   // какие файлы следует переносить при сборке проекта и куда
-        php: `${srcFolder}/*.php`,             // для работы без препроцессора pug
-        modules: `${srcFolder}/modules/**/*.php`,
+        page: `${srcFolder}/*.php`,             // для работы без препроцессора pug
+        php: `${srcFolder}/php/**/*.php`,
         scss: `${srcFolder}/scss/*.css`,
         js: `${srcFolder}/js/**/*.js`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
@@ -29,8 +29,8 @@ export const path = {
         fonts: `${srcFolder}/fonts/**/*.*`
     },
     watch: {  // изменение каких файлов следует отслеживать
-        php: `${srcFolder}/**/*.php`,
-        modules: `${srcFolder}/modules/**/*.php`, 
+        page: `${srcFolder}/**/*.*`,
+        php: `${srcFolder}/php/**/*.php`, 
         scss: `${srcFolder}/scss/*.scss`,
         js: `${srcFolder}/js/**/*.js`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg,ico}`,
