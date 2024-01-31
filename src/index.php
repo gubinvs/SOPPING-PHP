@@ -4,7 +4,8 @@
 $_titlePage = "Компонент энергии - поставки комплектующих для средств автоматизации";
 $_headDescr = "Комплексные поставки комплектующих для средств автоматизации";
 $_canonical = "dg";
-include "php/modules/head.php";
+require_once 'php/modules/head.php';
+require_once "php/class/Nomenclature.php";
 ?>
 
 <body>
@@ -14,11 +15,22 @@ include "php/modules/head.php";
     <main>
         <h1 class="visually-hidden h1-visually h1__visually" style="visibility: hidden;">Комплектующие для средств автоматизации у нас на сайте</h1>
         <div class="container"> 
+            <?php
+                
+                $tom = new Nomenclature('Шнайдер', "Рубильник");
+                $tom->displayNomenclature();
+               
+            ?>
             
+            
+
+
+
         </div>
     </main>
     <!--Подключение скриптов JS-->
     <script src="js/app.js" type="module"></script>
 </body>
+
 
 </html>
