@@ -21,11 +21,6 @@ require_once "php/class/Nomenclature.php";
                 $tom->displayNomenclature();
                
             ?>
-            
-            
-
-
-
         </div>
     </main>
     <!--Подключение скриптов JS-->
