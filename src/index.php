@@ -4,12 +4,12 @@
 $_titlePage = "Компонент энергии - поставки комплектующих для средств автоматизации";
 $_headDescr = "Комплексные поставки комплектующих для средств автоматизации";
 $_canonical = "dg";
-include "modules/head.php";
+include "php/modules/head.php";
 ?>
 
 <body>
     <!--Подключение header-->
-    <?php include "modules/header.php"; ?>
+    <?php include "php/modules/header.php"; ?>
     <!--Основная секция страницы-->
     <main>
         <h1 class="visually-hidden h1-visually h1__visually" style="visibility: hidden;">Комплектующие для средств автоматизации у нас на сайте</h1>
