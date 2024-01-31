@@ -46,6 +46,16 @@
                 <button class="search-block-form__botton_submit" type="submit" name="submit"><img class="search-botton__icon" src="../img/serch.svg" alt="Кнопка поиска"></button>
             </form>
         </div>
+        <?php 
+        // Выпадающий блок с наименованием брендов и типов номенклатуры
+        $nomenclature[] = array (
+            $nomenclature[0] = new Nomenclature ("Schneider", "Розетки"),
+            $nomenclature[1] = new Nomenclature("ABB", "Розетки"),
+        );
+        
+        
+        ?>
+
         <div class="search-block search-block-subsection search-block-none" id="catalog-list">
             <ul class="search-block-list">
                 <li class="search-block-list__item" id="catalog-list_1">Schneider</li>
