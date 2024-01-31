@@ -1,7 +1,5 @@
 <?php
 
-
-
 // Класс с параметрами номенклатуры
 class Nomenclature {
     
@@ -19,12 +17,5 @@ class Nomenclature {
 
     }
 }
-
-
-
-
-
-
-
 
 ?>
