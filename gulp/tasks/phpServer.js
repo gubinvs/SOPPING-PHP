@@ -3,8 +3,8 @@ import php from "gulp-connect-php";
 export const phpServer = () => {
     php.server(
         {
-            base: `${app.path.build.php}`, 
-            port: 3000, 
+            base: `${app.path.build.page}`, 
+            port: 3001, 
             keepalive: true
         } 
     ); 
