@@ -14,7 +14,7 @@
     "browser-sync": "latest",
     "del": "latest",
     "glob-stream": "latest",
-    "gulp": "latest",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "latest",
     "gulp-clean-css": "latest",
     "gulp-connect-php": "^1.0.3",

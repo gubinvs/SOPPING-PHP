@@ -5,18 +5,21 @@ $_titlePage = "Компонент энергии - поставки компле
 $_headDescr = "Комплексные поставки комплектующих для средств автоматизации";
 $_canonical = "dg";
 require_once 'php/modules/head.php';
-require_once "php/class/Nomenclature.php";
 ?>
 
 <body>
     <!--Подключение header-->
-    <?php include "php/modules/header.php"; ?>
+    <?php 
+    require_once "php/modules/header.php";
+    require_once "php/modules/catalogSearch.php";
+    ?>
+
     <!--Основная секция страницы-->
     <main>
         <h1 class="visually-hidden h1-visually h1__visually" style="visibility: hidden;">Комплектующие для средств автоматизации у нас на сайте</h1>
         <div class="container"> 
             <?php
-
+            
             ?>
         </div>
     </main>
