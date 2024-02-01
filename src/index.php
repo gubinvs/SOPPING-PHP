@@ -19,6 +19,12 @@ require_once "php/class/Nomenclature.php";
                 
                 $tom = new Nomenclature('Шнайдер', "Рубильник");
                 $tom->displayNomenclature();
+
+                $don = new Nomenclature();
+                $don->AddArray("as f", ["sjdh", "dsjfhg", "sd e jfhd"]);
+                $don->displayNomenclatureArray();
+
+
                
             ?>
         </div>
