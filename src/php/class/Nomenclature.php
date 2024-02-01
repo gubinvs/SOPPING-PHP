@@ -32,7 +32,6 @@ class Nomenclature {
         echo "$this->brend<br>";
         for ($i=0; $i < count($this->types); $i++){
             echo $this->types[$i];
-            echo "<br>";
         }
     }
 }
