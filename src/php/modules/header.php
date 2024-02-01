@@ -47,11 +47,7 @@
             </form>
         </div>
         <?php 
-        // Выпадающий блок с наименованием брендов и типов номенклатуры
-        $nomenclature[] = array (
-            $nomenclature[0] = new Nomenclature ("Schneider", "Розетки"),
-            $nomenclature[1] = new Nomenclature("ABB", "Розетки"),
-        );
+     
         
         
         ?>

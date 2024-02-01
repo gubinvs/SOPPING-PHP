@@ -16,16 +16,7 @@ require_once "php/class/Nomenclature.php";
         <h1 class="visually-hidden h1-visually h1__visually" style="visibility: hidden;">Комплектующие для средств автоматизации у нас на сайте</h1>
         <div class="container"> 
             <?php
-                
-                $tom = new Nomenclature('Шнайдер', "Рубильник");
-                $tom->displayNomenclature();
 
-                $don = new Nomenclature();
-                $don->AddArray("as f", ["sjdh", "dsjfhg", "sd e jfhd"]);
-                $don->displayNomenclatureArray();
-
-
-               
             ?>
         </div>
     </main>
