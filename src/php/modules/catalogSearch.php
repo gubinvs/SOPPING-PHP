@@ -47,13 +47,20 @@
     echo '">';
     // Цикл заполняет графы в количестве типов в продуте (подтипы бренда)
     for ($i = 0; $i < $typeItem; $i++) {
-        echo '<li class="search-block-list_subsection__item">';
+        
+        echo '<li class="search-block-list_subsection__item'; 
+        //-- Добавил условие, если этерация болще первой, то добавляю класс (list_subsection-none)
+        if ($brandItem > 1) {
+            echo ' list_subsection-none';
+        }
+        echo '">';
         echo $product[$brandItem - 1]->types[$i];
         echo  '</li>';
     }
-    $brandItem ++ ;
-    } while ($brandItem < count($product) - 1);
     echo '</ul>';
+    $brandItem ++ ;
+    } while ($brandItem < count($product) + 1 );
+    echo count($product);
     ?>
 </div>
 
