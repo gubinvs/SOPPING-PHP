@@ -7,4 +7,12 @@ $product = [
     new Brand("Siemens", ["Розетки-Siemens", "Выключатели-Siemens", "Контроллеры-Siemens", "Контакторы-Schneider"]),
     new Brand("Phoenix", ["Розетки-Phoenix", "Выключатели-Phoenix", "Контроллеры-Phoenix", "Контакторы-Phoenix"])
 ];
+
+
+
+
+//-- Метод определяет
 ?>
+
+
+

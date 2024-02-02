@@ -36,5 +36,40 @@
     }
     echo '</ul>';
     echo "</div>";
+    //-- Переменная с первоначальным значением list-subsection_ и равно 1, это значение должно быть равно количеству брендов (brand)
+    $brandItem = 1;
+    //-- Цикл создает блоки в количестве записей в переменной product (количество брендов)
+    do {
+    echo '<ul class="search-block-list_subsection subsection-schneider" id="list-subsection_';
+    echo $brandItem;
+    echo '">';
+    // Цикл заполняет графы в количестве типов в продуте (подтипы бренда)
+    for ($i = 0; $i < 10; $i++) {
+        echo '<li class="search-block-list_subsection__item">';
+        echo '';
+        echo  '</li>';
+    }
+        
+    $brandItem ++ ;
+    } while ($brandItem < count($product) - 1);
+    
+    echo '</ul>';
     ?>
 </div>
+
+      
+            <!-- ul(id="list-subsection_2").search-block-list_subsection.subsection-abb.list_subsection-none
+                li.search-block-list_subsection__item Розетки-abb
+                li.search-block-list_subsection__item Выключатели-abb
+                li.search-block-list_subsection__item Контроллеры-abb
+                li.search-block-list_subsection__item Контакторы-abb
+            ul(id="list-subsection_3").search-block-list_subsection.subsection-siemens.list_subsection-none
+                li.search-block-list_subsection__item Розетки-Siemens
+                li.search-block-list_subsection__item Выключатели-Siemens
+                li.search-block-list_subsection__item Контроллеры-Siemens
+                li.search-block-list_subsection__item Контакторы-Siemens
+            ul(id="list-subsection_4").search-block-list_subsection.subsection-phoenix.list_subsection-none
+                li.search-block-list_subsection__item Розетки-Phoenix
+                li.search-block-list_subsection__item Выключатели-Phoenix
+                li.search-block-list_subsection__item Контроллеры-Phoenix
+                li.search-block-list_subsection__item Контакторы-Phoenix -->
