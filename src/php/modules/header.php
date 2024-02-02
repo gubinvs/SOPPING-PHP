@@ -47,40 +47,36 @@
         </form>
     </div>
     <?php
-    include 'php/class/brandList.php';
-    echo '<div class="search-block search-block-subsection search-block-none" id="catalog-list">';
-    for ($i = 0; $i < count($product); $i++) {
+        include 'php/class/brandList.php';
+        echo '<div class="search-block search-block-subsection search-block-none" id="catalog-list">';
         echo '<ul class="search-block-list">';
-        echo '<li class="search-block-list__item" id="catalog-list_1">';
-        echo $product[$i]->name;
-        echo '</li>';
-    }
-    echo '</ul>';
-    echo "</div>";
-    //-- Переменная с первоначальным значением list-subsection_ и равно 1, это значение должно быть равно количеству брендов (brand)
-    $brandItem = 1;
-    //-- Цикл создает блоки в количестве записей в переменной product (количество брендов)
-    do {
-    //--  Определение количества записей (типов) в данном бренде (brand)
-    $typeItem = count($product[$brandItem -1]->types);
-    echo '<ul class="search-block-list_subsection subsection-schneider" id="list-subsection_';
-    echo $brandItem;
-    echo '">';
-    // Цикл заполняет графы в количестве типов в продуте (подтипы бренда)
-    for ($i = 0; $i < $typeItem; $i++) {
+            for ($i = 0; $i < count($product); $i++) {
+                echo '<li class="search-block-list__item" id="catalog-list_';
+                echo $i+1;
+                echo '">';
+                echo $product[$i]->name;
+                echo '</li>';
+            }
+        echo '</ul>';
         
-        echo '<li class="search-block-list_subsection__item'; 
-        //-- Добавил условие, если этерация болще первой, то добавляю класс (list_subsection-none)
-        if ($brandItem > 1) {
-            echo ' list_subsection-none';
-        }
-        echo '">';
-        echo $product[$brandItem - 1]->types[$i];
-        echo  '</li>';
-    }
-    echo '</ul>';
-    $brandItem ++ ;
-    } while ($brandItem < count($product) + 1 );
-    echo count($product);
+        //-- Переменная с первоначальным значением list-subsection_ и равно 1, это значение должно быть равно количеству брендов (brand)
+        $brandItem = 1;
+        //-- Цикл создает блоки в количестве записей в переменной product (количество брендов)
+        do {
+            //--  Определение количества записей (типов) в данном бренде (brand)
+            $typeItem = count($product[$brandItem -1]->types);
+            echo '<ul class="search-block-list_subsection list_subsection-none" id="list-subsection_';
+            echo $brandItem;
+            echo '">';
+            // Цикл заполняет графы в количестве типов в продуте (подтипы бренда)
+            for ($i = 0; $i < $typeItem; $i++) {
+                echo '<li class="search-block-list_subsection__item">'; 
+                echo $product[$brandItem - 1]->types[$i];
+                echo  '</li>';
+            }
+            echo '</ul>';
+            $brandItem ++ ;
+        } while ($brandItem < count($product) + 1 );
+        echo "</div>";
     ?>
 </header>

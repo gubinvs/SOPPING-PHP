@@ -4,7 +4,7 @@
 // const basket = document.getElementById('shopping-icon'); 
 
 
-export function shoppingIcon (basket,number, classDisplay, classNoneDisplay) { 
+export function shoppingIcon (basket, number, classDisplay, classNoneDisplay) { 
     /* -- Инициализирую переменную с количеством позиций в корзине, в последствии ее нужно будет брать 
     от величины массива */
     let quantity = number;

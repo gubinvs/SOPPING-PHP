@@ -8,19 +8,19 @@ export function listDropDown () {
     const list = document.getElementById('list-subsection_1'); // инициализация списка каталога
 
     section.addEventListener('mouseover', function() {
-        list.className = "search-block-list_subsection subsection-schneider";
+        list.className = "search-block-list_subsection";
     });
 
     section.addEventListener('mouseout', function() {
-        list.className = "search-block-list_subsection subsection-abb list_subsection-none";
+        list.className = "search-block-list_subsectionlist_subsection-none";
     });
 
     list.addEventListener('mouseover', function() {
-        list.className = "search-block-list_subsection subsection-schneider";
+        list.className = "search-block-list_subsection";
     });
 
     list.addEventListener('mouseout', function() {
-        list.className = "search-block-list_subsection subsection-abb list_subsection-none";
+        list.className = "search-block-list_subsection list_subsection-none";
     });
 
 }
@@ -38,19 +38,19 @@ export function arrayListDropDown (quantity) {
         list[i] = document.getElementById('list-subsection_' + i); // инициализация списка каталога
 
         section[i].addEventListener('mouseover', function() {
-            list[i].className = "search-block-list_subsection subsection-schneider";
+            list[i].className = "search-block-list_subsection";
         });
     
         section[i].addEventListener('mouseout', function() {
-            list[i].className = "search-block-list_subsection subsection-abb list_subsection-none";
+            list[i].className = "search-block-list_subsection list_subsection-none";
         });
     
         list[i].addEventListener('mouseover', function() {
-            list[i].className = "search-block-list_subsection subsection-schneider";
+            list[i].className = "search-block-list_subsection";
         });
     
         list[i].addEventListener('mouseout', function() {
-            list[i].className = "search-block-list_subsection subsection-abb list_subsection-none";
+            list[i].className = "search-block-list_subsection list_subsection-none";
         });
     } 
 }
