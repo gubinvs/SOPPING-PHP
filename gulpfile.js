@@ -53,6 +53,7 @@ export { dev }
 export { build }
 
 
+
 // метод для запуска плагина преобразования шрифтов
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle); // пока не работает
 // Создание сценария для выполнения по умолчанию
