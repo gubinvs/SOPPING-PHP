@@ -40,19 +40,19 @@
     $brandItem = 1;
     //-- Цикл создает блоки в количестве записей в переменной product (количество брендов)
     do {
+    //--  Определение количества записей (типов) в данном бренде (brand)
+    $typeItem = count($product[$brandItem -1]->types);
     echo '<ul class="search-block-list_subsection subsection-schneider" id="list-subsection_';
     echo $brandItem;
     echo '">';
     // Цикл заполняет графы в количестве типов в продуте (подтипы бренда)
-    for ($i = 0; $i < 10; $i++) {
+    for ($i = 0; $i < $typeItem; $i++) {
         echo '<li class="search-block-list_subsection__item">';
-        echo '';
+        echo $product[$brandItem - 1]->types[$i];
         echo  '</li>';
     }
-        
     $brandItem ++ ;
     } while ($brandItem < count($product) - 1);
-    
     echo '</ul>';
     ?>
 </div>
