@@ -63,20 +63,3 @@
     echo count($product);
     ?>
 </div>
-
-      
-            <!-- ul(id="list-subsection_2").search-block-list_subsection.subsection-abb.list_subsection-none
-                li.search-block-list_subsection__item Розетки-abb
-                li.search-block-list_subsection__item Выключатели-abb
-                li.search-block-list_subsection__item Контроллеры-abb
-                li.search-block-list_subsection__item Контакторы-abb
-            ul(id="list-subsection_3").search-block-list_subsection.subsection-siemens.list_subsection-none
-                li.search-block-list_subsection__item Розетки-Siemens
-                li.search-block-list_subsection__item Выключатели-Siemens
-                li.search-block-list_subsection__item Контроллеры-Siemens
-                li.search-block-list_subsection__item Контакторы-Siemens
-            ul(id="list-subsection_4").search-block-list_subsection.subsection-phoenix.list_subsection-none
-                li.search-block-list_subsection__item Розетки-Phoenix
-                li.search-block-list_subsection__item Выключатели-Phoenix
-                li.search-block-list_subsection__item Контроллеры-Phoenix
-                li.search-block-list_subsection__item Контакторы-Phoenix -->

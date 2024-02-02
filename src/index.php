@@ -11,7 +11,6 @@ require_once 'php/modules/head.php';
     <!--Подключение header-->
     <?php
     require_once "php/modules/header.php";
-    require_once "php/modules/catalogSearch.php";
     ?>
 
     <!--Основная секция страницы-->
