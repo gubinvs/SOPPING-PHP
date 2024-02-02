@@ -4,7 +4,7 @@ export const phpServer = () => {
     php.server(
         {
             base: `${app.path.build.page}`, 
-            port: 3001, 
+            port: 5000, 
             keepalive: true
         } 
     ); 

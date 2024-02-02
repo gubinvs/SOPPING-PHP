@@ -1,5 +1,5 @@
 <div class="container header__container">
-    <div class="control-block"> <img class="logo" src="../img/compEnergy.svg" alt="Логотип интернет-интернет магазина Компонент энергии">
+    <div class="control-block"> <img class="logo" src="img/compEnergy.svg" alt="Логотип интернет-интернет магазина Компонент энергии">
         <ul class="control-list">
             <li class="control-list__item">
                 <div class="control-list__item_img control-list__item_img1"></div>
