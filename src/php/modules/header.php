@@ -43,7 +43,7 @@
         <div class="search-block__catalog" id="catalog-block">Каталог товаров</div>
         <form class="search-block__form">
             <input class="search-block-form__text" type="search" name="search" placeholder="Поиск по сайту">
-            <button class="search-block-form__botton_submit" type="submit" name="submit"><img class="search-botton__icon" src="../img/serch.svg" alt="Кнопка поиска"></button>
+            <button class="search-block-form__botton_submit" type="submit" name="submit"><img class="search-botton__icon" src="img/serch.svg" alt="Кнопка поиска"></button>
         </form>
     </div>
     <?php
