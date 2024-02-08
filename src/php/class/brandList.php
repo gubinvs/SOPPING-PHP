@@ -8,9 +8,6 @@ $product = [
     new Brand("Phoenix", ["Розетки-Phoenix", "Выключатели-Phoenix", "Контроллеры-Phoenix", "Контакторы-Phoenix"])
 ];
 
-
-
-
 //-- Метод определяет
 ?>
 
