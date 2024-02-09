@@ -9,8 +9,8 @@
             // Открывая файл для чтения (параметр r) из коорого построчно считываются параметры (host, port, dbName, dbUser, dbPass)
             $fd = fopen("$fileName", 'r') or die("не удалось открыть файл");
             for ($i=0; $i<!feof($fd); $i++) {
-                $db[] = 
-
+                $db[$i] = fgets($fd);
+                echo $db[$i];
             }
             fclose($fd);
 
