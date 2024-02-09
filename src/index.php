@@ -7,8 +7,8 @@ $_canonical = "Прописать требования яндекса";
 require_once 'php/modules/head.php';
 require_once 'php/class/connector.php';
 // Подключение к базе данных с пользователями для проверки и авторизации
-$conn = new Connector();
-$conn->ConnectDbUser();
+// $conn = new Connector();
+// $conn->ConnectDbUser();
 ?>
 
 <body>
