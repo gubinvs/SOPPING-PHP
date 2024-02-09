@@ -2,15 +2,16 @@
 // подключение к базе MySQL
     class Connector {
 
-        static $host, $port, $dbName, $dbUser, $dbPass;
+        
     
         /// Путь к файлу с данными для подключения
         function ConnectDb ($fileName) {
-            // Открывая файл для чтения (параметр r)
+            // Открывая файл для чтения (параметр r) из коорого построчно считываются параметры (host, port, dbName, dbUser, dbPass)
             $fd = fopen("$fileName", 'r') or die("не удалось открыть файл");
-       
+            for ($i=0; $i<!feof($fd); $i++) {
+                $db[] = 
 
-
+            }
             fclose($fd);
 
 
