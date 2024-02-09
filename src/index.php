@@ -22,6 +22,7 @@ require_once 'php/class/connector.php';
             <?php   
                 $conn = new Connector();
                 $conn->ConnectDb("files/dbuser.txt");
+                echo $conn;
             ?>
         </div>
     </main>
