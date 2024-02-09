@@ -6,9 +6,7 @@ $_headDescr = "Комплексные поставки комплектующи�
 $_canonical = "Прописать требования яндекса";
 require_once 'php/modules/head.php';
 require_once 'php/class/connector.php';
-// Подключение к базе данных с пользователями для проверки и авторизации
-// $conn = new Connector();
-// $conn->ConnectDbUser();
+
 ?>
 
 <body>
@@ -23,7 +21,8 @@ require_once 'php/class/connector.php';
         <h1 class="visually-hidden h1-visually h1__visually" style="visibility: hidden;">Комплектующие для средств автоматизации у нас на сайте</h1>
         <div class="container">
             <?php
- 
+                $conn = new Connector();
+                $conn->ConnectDb("text.txt");
             ?>
 
         </div>
