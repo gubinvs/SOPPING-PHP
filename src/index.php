@@ -22,7 +22,8 @@ require_once 'php/class/connector.php';
             <?php   
                 $conn = new Connector();
                 $conn->ConnectDb("files/dbuser.txt");
-                echo $conn;
+                $connect = new PDO($conn[0],"$conn[1]" ,$conn[2], $conn[3])
+
             ?>
         </div>
     </main>
