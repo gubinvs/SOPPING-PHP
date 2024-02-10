@@ -1,0 +1,3 @@
+mysql:host=gubinv.beget.tech;port=3306;dbname=gubinv_userecomp
+gubinv_userecomp
+4u6*QOyM

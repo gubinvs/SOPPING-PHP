@@ -19,10 +19,7 @@ require_once 'php/class/connector.php';
     <main>
         <h1 class="visually-hidden h1-visually h1__visually" style="visibility: hidden;">Комплектующие для средств автоматизации у нас на сайте</h1>
         <div class="container">
-            <?php   
-                $conn = new Connector();
-                $conn->ConnectDb("files/dbuser.txt");
-                $connect = new PDO($conn[0],"$conn[1]" ,$conn[2], $conn[3])
+            <?php
 
             ?>
         </div>
@@ -30,7 +27,4 @@ require_once 'php/class/connector.php';
     <!--Подключение скриптов JS-->
     <script src="js/app.js" type="module"></script>
 </body>
-
-
-
 </html>
