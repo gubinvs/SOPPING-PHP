@@ -19,11 +19,9 @@ require_once 'php/class/connector.php';
         <h1 class="visually-hidden h1-visually h1__visually" style="visibility: hidden;">Комплектующие для средств автоматизации у нас на сайте</h1>
         <div class="container">
             <?php
-                $mysqli = new ConnectorMSQL();
-                $mysqli->ConnectDB('gubinv.beget.tech', 'gubinv_userecomp', 'gubinv_userecomp', 'kJg&78dw');
-                if ($mysqli) {
-                    echo 'Не подключено!';
-                }
+                $conn = new mysqli("gubinv.beget.tech", "gubinv_userecomp", "kJg&78dw");
+                // $conn = new PDO("mysql:host=gubinv.beget.tech;port=3306;dbname=gubinv_userecomp", "gubinv_userecomp", "kJg&78dw");
+
             ?>
         
                 <form method="post" action="do_register.php">
