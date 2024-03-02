@@ -6,7 +6,7 @@
 
 
 @import 'variables.scss';
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
 //-- сброс стилей
 /* Указываем box sizing */
 *,
@@ -127,6 +127,7 @@ input {
 ::placeholder {
   font-size: 16px;
 }
+
 
 section,
 header,

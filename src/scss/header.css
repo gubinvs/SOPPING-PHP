@@ -1,7 +1,3 @@
-::-moz-placeholder {
-  color: #000000;
-}
-
 ::placeholder {
   color: #000000;
 }
@@ -376,4 +372,4 @@ header,
   .header-nav__item_company {
     display: none;
   }
-}/*# sourceMappingURL=header.css.map */
+}
