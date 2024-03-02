@@ -16,21 +16,37 @@
     background-color: $colorBackgroundBody;
 }
 
+.control-list__item_img {
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 4px;
+}
+
+.control-list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.control-list__item:hover .control-list__item_discr {
+    color: $colorText;
+}
+
+
+
 .header-nav__list,
 .header-nav,
 .control-block,
 .control-list,
-.control-list__item,
 .search-block,
 .search-block__catalog, 
 .search-block__form,
 .search-block-form__text,
 .search-block-form__botton_submit {
     display: flex;
-}
-
-.control-list__item {
-    flex-direction: column;
 }
 
 .header-nav,
@@ -43,16 +59,13 @@
     justify-content: flex-start;
 }
 
-.control-list__item {
-    justify-content: flex-end;
-}
 
 .search-block-form__text,
 .search-block-form__botton_submit {
     justify-content: center;
 }
 
-.control-list__item,
+
 .search-block__catalog,
 .search-block__form,
 .search-block-form__text,
@@ -130,8 +143,7 @@ header,
     width: 60px;
 }
 
-.header-social-icon,
-.control-list__item_img {
+.header-social-icon {
     width: 32px;
 }
 
@@ -152,9 +164,6 @@ header,
     height: 24px;
 }
 
-.control-list__item_img {
-    height: 32px;
-}
 
 .search-block__catalog,
 .search-block-form__text,
@@ -263,39 +272,10 @@ header,
     display: none;
 }
 
-.control-list__item_img,
 .header-social-icon {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-}
-
-.control-list__item_img1 {
-    background-image: url(../img/iconCompany.svg);
-}
-
-.control-list__item_img2 {
-    background-image: url(../img/order.svg);
-}
-
-.control-list__item_img3 {
-    background-image: url(../img/basket.svg);
-}
-
-.control-list__item_img1:hover {
-    background-image: url(../img/iconCompanyBlack.svg);
-}
-
-.control-list__item_img2:hover {
-    background-image: url(../img/orderBlack.svg);
-}
-
-.control-list__item_img3:hover {
-    background-image: url(../img/basketBlack.svg);
-}
-
-.control-list__item_discr:hover {
-    color: $colorText;
 }
 
 .header-social-icon {

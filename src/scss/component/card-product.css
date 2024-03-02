@@ -149,7 +149,7 @@
 }
 
 .basket__decrement:hover {
-  background-color: #EF9537;
+  background-color: #FEB50D;
 }
 
 .basket__position {
@@ -176,7 +176,7 @@
 }
 
 .basket__increment:hover {
-  background-color: #EF9537;
+  background-color: #FEB50D;
 }
 
 .basket__button {
@@ -188,7 +188,7 @@
 }
 
 .basket__button:hover {
-  background-color: #EF9537;
+  background-color: #FEB50D;
 }
 
 @media only screen and (max-width: 1280px) {
