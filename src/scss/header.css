@@ -1,5 +1,5 @@
 ::placeholder {
-  color: #000000;
+  color: #FBAF00;
 }
 
 .header__container {
@@ -213,7 +213,7 @@ header,
 .search-block__catalog,
 .search-block-form__text,
 .search-block-form__botton_submit {
-  background-color: #EF9537;
+  background-color: #FEB50D;
 }
 
 .search-block__catalog:hover,

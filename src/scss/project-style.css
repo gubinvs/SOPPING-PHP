@@ -228,7 +228,7 @@ button {
   }
 }
 ::placeholder {
-  color: #000000;
+  color: #A87500;
 }
 
 .header__container {
@@ -442,7 +442,7 @@ header,
 .search-block__catalog,
 .search-block-form__text,
 .search-block-form__botton_submit {
-  background-color: #EF9537;
+  background-color: #FEB50D;
 }
 
 .search-block__catalog:hover,
@@ -758,7 +758,7 @@ header,
 }
 
 .basket__decrement:hover {
-  background-color: #EF9537;
+  background-color: #FEB50D;
 }
 
 .basket__position {
@@ -785,7 +785,7 @@ header,
 }
 
 .basket__increment:hover {
-  background-color: #EF9537;
+  background-color: #FEB50D;
 }
 
 .basket__button {
@@ -797,7 +797,7 @@ header,
 }
 
 .basket__button:hover {
-  background-color: #EF9537;
+  background-color: #FEB50D;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -907,7 +907,7 @@ header,
 }
 
 .button-search:hover {
-  background-color: #EF9537;
+  background-color: #FEB50D;
 }
 
 @media only screen and (max-width: 1280px) {

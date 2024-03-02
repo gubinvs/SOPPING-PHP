@@ -15,7 +15,7 @@
                 </li>
             </ul>
             <ul class="header-nav__list header-nav__list_tutorial">
-                <li class="header-nav__item header-nav__item_company">Для юридических лиц</li>
+                <!-- <li class="header-nav__item header-nav__item_company">Для юридических лиц</li> -->
                 <li class="header-nav__item">Способы доставки</li>
                 <li class="header-nav__item">Способы оплаты</li>
             </ul>

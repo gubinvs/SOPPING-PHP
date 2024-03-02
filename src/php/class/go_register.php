@@ -22,13 +22,17 @@ try {
 
     // Формирование запроса в базу данных
     $sql = "INSERT INTO `userSystems`(`userEmail`, `userPassword`) VALUES ( '$userName', '$userPassword' )";
-    // echo "Запрос: " . $sql;
+    echo "Запрос: " . $sql;
 
     // Передача запроса в базу данных
-    $db->exec($sql);
+    //$db->exec($sql);
     // echo "Добавлен в базу данных";
     
     // Отключение от базы данных
     $con = null;
     // echo "<br>" . "Базу отключил!"
+
+    // После удачной регистрации пользователя открываем страницу:
+    $new_url = '../../index.php';
+    header('Location: ' . $new_url);
 ?>
