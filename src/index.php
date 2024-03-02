@@ -10,11 +10,7 @@ require_once 'php/class/connectorMSQL.php';
 
 <body>
     <!--Подключение header-->
-    <?php
-    require_once "php/modules/header.php";
-
-    ?>
-
+    <?php require_once "php/modules/header.php"; ?>
     <!--Основная секция страницы-->
     <main>
         <h1 class="visually-hidden h1-visually h1__visually" style="visibility: hidden;">Комплектующие для средств автоматизации у нас на сайте</h1>
