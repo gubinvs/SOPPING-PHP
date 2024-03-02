@@ -12,23 +12,14 @@ require_once 'php/class/connectorMSQL.php';
     <!--Подключение header-->
     <?php
         require_once "php/modules/header.php";
+
     ?>
 
     <!--Основная секция страницы-->
     <main>
         <h1 class="visually-hidden h1-visually h1__visually" style="visibility: hidden;">Комплектующие для средств автоматизации у нас на сайте</h1>
         <div class="container">
-            <?php
-                // Подключение к базе данных с параметрами пользователя
-                $con = new ConnectorMSQL();
-                $con->ConnectDbUser();
-                if ($con) {
-                    echo 'Все в порядке, подключились и работаем!';
-                } else {
-                    echo 'Нет подключения к базе данных';
-                }
-            ?>
-                <form method="post" action="go_register.php">
+                <form method="post" action="php/class/go_register.php">
                     <div class="mb-3">
                         <label for="username" class="form-label">Имя пользователя</label>
                         <input type="text" class="form-control" id="username" name="username" required>
