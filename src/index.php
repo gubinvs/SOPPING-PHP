@@ -5,7 +5,7 @@ $_titlePage = "Компонент энергии - поставки компле
 $_headDescr = "Комплексные поставки комплектующих для средств автоматизации";
 $_canonical = "Прописать требования яндекса";
 require_once 'php/modules/head.php';
-require_once 'php/class/connector.php';
+require_once 'php/class/connectorMSQL.php';
 ?>
 
 <body>
@@ -19,21 +19,25 @@ require_once 'php/class/connector.php';
         <h1 class="visually-hidden h1-visually h1__visually" style="visibility: hidden;">Комплектующие для средств автоматизации у нас на сайте</h1>
         <div class="container">
             <?php
-                $conn = new mysqli("gubinv.beget.tech", "gubinv_userecomp", "kJg&78dw");
-                // $conn = new PDO("mysql:host=gubinv.beget.tech;port=3306;dbname=gubinv_userecomp", "gubinv_userecomp", "kJg&78dw");
-
+                // Подключение к базе данных с параметрами пользователя
+                $con = new ConnectorMSQL();
+                $con->ConnectDbUser();
+                if ($con) {
+                    echo 'Все в порядке, подключились и работаем!';
+                } else {
+                    echo 'Нет подключения к базе данных';
+                }
             ?>
-        
-                <form method="post" action="do_register.php">
+                <form method="post" action="go_register.php">
                     <div class="mb-3">
-                        <label for="username" class="form-label">Username</label>
+                        <label for="username" class="form-label">Имя пользователя</label>
                         <input type="text" class="form-control" id="username" name="username" required>
                     </div>
                     <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
+                        <label for="password" class="form-label">Пароль</label>
                         <input type="password" class="form-control" id="password" name="password" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">Register</button>
+                    <button type="submit" class="btn btn-primary">Регистрация</button>
                 </form>
         </div>
     </main>
