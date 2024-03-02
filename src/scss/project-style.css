@@ -262,6 +262,19 @@ button {
   color: #000000;
 }
 
+.search-block-form__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 20px;
+  width: 881px;
+  border: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #FEB50D;
+}
+
 .header-nav__list,
 .header-nav,
 .control-block,
@@ -269,7 +282,6 @@ button {
 .search-block,
 .search-block__catalog,
 .search-block__form,
-.search-block-form__text,
 .search-block-form__botton_submit {
   display: flex;
 }
@@ -284,14 +296,12 @@ button {
   justify-content: flex-start;
 }
 
-.search-block-form__text,
 .search-block-form__botton_submit {
   justify-content: center;
 }
 
 .search-block__catalog,
 .search-block__form,
-.search-block-form__text,
 .search-block-form__botton_submit {
   align-items: center;
 }
@@ -389,7 +399,6 @@ header,
 }
 
 .search-block__catalog,
-.search-block-form__text,
 .search-block-form__botton_submit {
   height: 50px;
 }
@@ -399,7 +408,6 @@ header,
 }
 
 .search-block__catalog,
-.search-block-form__text,
 .search-block-list__item,
 .search-block-list_subsection__item {
   font-size: 20px;
@@ -436,15 +444,7 @@ header,
   background-image: url(../img/burgerBlack.svg);
 }
 
-.search-block-form__text {
-  width: 895px;
-  border: 0px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
 .search-block__catalog,
-.search-block-form__text,
 .search-block-form__botton_submit {
   background-color: #FEB50D;
 }
@@ -533,8 +533,8 @@ header,
   .search-block__catalog {
     width: 301px;
   }
-  .search-block__form {
-    width: 689px;
+  .search-block-form__text {
+    width: 605px;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -544,8 +544,8 @@ header,
     font-size: 20px;
     padding-left: 62px;
   }
-  .search-block__form {
-    width: 717px;
+  .search-block-form__text {
+    width: 633px;
   }
   .search-block__catalog,
   .search-block__catalog:hover {
@@ -559,8 +559,8 @@ header,
     font-size: 18px;
     padding-left: 44px;
   }
-  .search-block__form {
-    width: 597px;
+  .search-block-form__text {
+    width: 433px;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -570,8 +570,8 @@ header,
     font-size: 18px;
     padding-left: 50px;
   }
-  .search-block__form {
-    width: 424px;
+  .search-block-form__text {
+    width: 344px;
   }
   .header-nav__item_company {
     display: none;
