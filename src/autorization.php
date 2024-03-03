@@ -16,7 +16,7 @@ require_once 'php/class/connectorMSQL.php';
     <main>
         <div class="container page-registration-container">
             <h1 class="mb-3">Авторизация пользователя:</h1>
-            <form method="POST" action="php/class/go_register.php">
+            <form method="POST" action="php/class/go_autorization.php">
                 <div class="mb-3">
                     <label for="username" class="form-label">E-mail пользователя</label>
                     <input type="text" class="form-control" id="username" name="username" required>
