@@ -18,19 +18,15 @@ require_once 'php/class/connectorMSQL.php';
             <h1 class="mb-3">Авторизация пользователя:</h1>
             <form method="POST" action="php/class/go_register.php">
                 <div class="mb-3">
-                    <label for="username" class="form-label">E-mail пользователя *</label>
+                    <label for="username" class="form-label">E-mail пользователя</label>
                     <input type="text" class="form-control" id="username" name="username" required>
                 </div>
                 <div class="mb-3">
-                    <label for="password" class="form-label">Пароль *</label>
+                    <label for="password" class="form-label">Пароль</label>
                     <input type="password" class="form-control" id="password" name="password" required>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">* Обязательное для заполнение поле</label>
                 </div>
                 <button type="submit" class="btn btn-outline-warning">Авторизация</button>
                 <input type="hidden" name="act" value="order">
-
             </form>
         </div>
     </main>
