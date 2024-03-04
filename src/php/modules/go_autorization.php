@@ -2,7 +2,6 @@
     /// Авторизация пользователя в системе
     include_once '../class/connectorMSQL.php';
 
-
     // Создание подключение к базе данных с пользователями:
     $conn = new ConnectorMSQL();
     $conn->ConnectDbUser();
