@@ -2,6 +2,10 @@
     /// Авторизация пользователя в системе
     include_once '../class/connectorMSQL.php';
 
+    // Обработка входящих данных из формы авторизации и помещение в переменные
+    $userName = "gubinvs@gmail.com";
+    $userPassword = "qwertyd";
+
     // Создание подключение к базе данных с пользователями:
     $conn = new ConnectorMSQL();
     $connect = $conn->ConnectDbUser();
@@ -16,10 +20,14 @@
 
     // При последующих обращениях метод fetch() возвращает следующие строки, пока в наборе не останется строк
     while ($db = $result->fetch()) {
-    
-        echo $db["userEmail"] . "_ _ _ _" . $db["userPassword"];
-        echo "<br>";
+        // Ищем совпадение по пользователю
+        if ($userName == $db["userEmail"] && $userPassword == $db["userPassword"]) {
+             echo "Добро пожаловать!";
+             break;
+        } 
     }
+
+
 
 
 ?>
