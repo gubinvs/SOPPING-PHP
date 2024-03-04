@@ -3,8 +3,11 @@
     include_once '../class/connectorMSQL.php';
 
     // Обработка входящих данных из формы авторизации и помещение в переменные
-    $userName = "gubinvs@gmail.com";
-    $userPassword = "qwerty";
+    // Приняли данные (методом post) инициализируем и присваиваем значение переменным данными из сообщения.
+    if ($_POST['act'] == 'order') {
+        $userName = ($_POST['username']);
+        $userPassword = ($_POST['password']);
+    }
 
     // Создание подключение к базе данных с пользователями:
     $conn = new ConnectorMSQL();
@@ -36,6 +39,6 @@
 
     // Если пользователь не найден, направляется на страницу регистрации
     if (!$user) {
-        echo "Предлагаем зарегистрироваться:";
+        header('Location: ' . '../../registration.php');
     }
 ?>

@@ -28,9 +28,8 @@ require_once 'php/class/connectorMSQL.php';
                 <div class="mb-3">
                     <label class="form-label">* Обязательное для заполнение поле</label>
                 </div>
-                    <button type="submit" class="btn btn-outline-warning">Регистрация</button>
-                    <input type="hidden" name="act" value="order">
-
+                <button type="submit" class="btn btn-outline-warning">Регистрация</button>
+                <input type="hidden" name="act" value="order">
             </form>
         </div>
     </main>
