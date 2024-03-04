@@ -1,3 +1,7 @@
+::-moz-placeholder {
+  color: #A87500;
+}
+
 ::placeholder {
   color: #A87500;
 }
@@ -347,4 +351,4 @@ header,
   .header-nav__item_company {
     display: none;
   }
-}
+}/*# sourceMappingURL=header.css.map */
